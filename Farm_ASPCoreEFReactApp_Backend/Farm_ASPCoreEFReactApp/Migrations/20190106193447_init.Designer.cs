@@ -4,14 +4,16 @@ using Farm_ASPCoreEFReactApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Farm_ASPCoreEFReactApp.Migrations
 {
     [DbContext(typeof(FarmDbContext))]
-    partial class FarmDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190106193447_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
